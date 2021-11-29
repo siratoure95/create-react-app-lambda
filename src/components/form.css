@@ -1,0 +1,696 @@
+/* component/form.css */
+/* https://codepen.io/uiswarup/pen/RBByzW */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  .container{  
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  body{
+    background-color: #111845;
+  }
+  
+  .container p{ 
+    display: inline-block;
+    font-size:10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+  } 
+
+  .content h2{ font-size:19px;}
+
+  .header{
+    width: 90%;
+    color: #fff;
+    position:absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header h1{
+      font-size: 50px;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      
+  } 
+
+  .box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 20px;
+  }
+  
+  .box:before{
+    content: '';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: rgba(255,255,255,0.1);
+    transition:0.5s;
+    pointer-events: none;
+  }
+  
+  .box:hover:before{
+    left:-50%;
+    transform: skewX(-5deg);
+  }
+  
+  
+  .box .content{
+    position:absolute;
+    top:15px;
+    left:15px;
+    right:15px;
+    bottom:15px;
+    border:1px solid #5701e0;
+    padding:20px;
+    text-align:center;
+    box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+    
+  }
+  
+  .box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    
+  }
+  
+  .box span:nth-child(1)
+  {
+    transform:rotate(0deg);
+  }
+  
+  .box span:nth-child(2)
+  {
+    transform:rotate(90deg);
+  }
+  
+  .box span:nth-child(3)
+  {
+    transform:rotate(180deg);
+  }
+  
+  .box span:nth-child(4)
+  {
+    transform:rotate(270deg);
+  }
+  
+  .box span:before
+  {
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background: #50dfdb;
+    animation: animate 4s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+    transform:scaleX(0);
+    transform-origin: left;
+    }
+    50%
+    {
+      transform:scaleX(1);
+    transform-origin: left;
+    }
+    50.1%
+    {
+      transform:scaleX(1);
+    transform-origin: right;
+      
+    }
+    
+    100%
+    {
+      transform:scaleX(0);
+    transform-origin: right;
+      
+    }
+    
+    
+  } 
+
+  /* CONTACT FORM */
+  .contactForm{
+    padding: 0px;
+    width: 90%;
+    max-width: 400px;
+    max-height: 100px;
+    margin: 30px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contactForm input, button, textarea{
+    height: 50px;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  .contactForm textarea{
+    height: 100px;
+  }
+  .MetamaskInstall{
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: 0px;;
+  }
+    /* WHITELIST BUTTON */
+   /* submit buttton https://getcssscan.com/css-buttons-examples*/
+   /* CSS */
+   .button-64 {
+     align-items: center;
+     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+     border: 0;
+     border-radius: 8px;
+     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+     box-sizing: border-box;
+     color: #FFFFFF;
+     display: flex;
+     font-family: Phantomsans, sans-serif;
+     font-size: 20px;
+     justify-content: center;
+     line-height: 1em;
+     max-width: 100%;
+     min-width: 140px;
+     padding: 3px;
+     text-decoration: none;
+     user-select: none;
+     -webkit-user-select: none;
+     touch-action: manipulation;
+     white-space: nowrap;
+     cursor: pointer;
+   }
+   
+   .button-64:active,
+   .button-64:hover {
+     outline: 0;
+   }
+   
+   .button-64 span {
+     background-color: rgb(5, 6, 45);
+     padding: 16px 24px;
+     border-radius: 6px;
+     width: 100%;
+     height: 100%;
+     transition: 300ms;
+   }
+   
+   .button-64:hover span {
+     background: none;
+   }
+   
+   @media (min-width: 768px) {
+     .button-64 {
+       font-size: 24px;
+       min-width: 196px;
+     }
+   }
+
+
+   /* Tablet Size  */
+
+     /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    .container{  
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    body{
+      background-color: #111845;
+    }
+    
+    .container p{ 
+      display: inline-block;
+      font-size:10px;
+      text-align: center;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+    } 
+  
+    .content h2{ font-size:19px;}
+ 
+    .header{
+      width: 90%;
+      color: #fff;
+      position:absolute;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .header h1{
+        font-size: 50px;
+        color: #fff;
+        font-family: 'Orbitron', sans-serif;
+        
+    } 
+
+    .box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      background: #111845a6;
+      box-sizing: border-box;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgb(23, 32, 90);
+      border: 2px solid #2a3cad;
+      color: white;
+      padding: 20px;
+    }
+    
+    .box:before{
+      content: '';
+      position:absolute;
+      top:0;
+      left:-100%;
+      width:100%;
+      height:100%;
+      background: rgba(255,255,255,0.1);
+      transition:0.5s;
+      pointer-events: none;
+    }
+    
+    .box:hover:before{
+      left:-50%;
+      transform: skewX(-5deg);
+    }
+    
+    
+    .box .content{
+      position:absolute;
+      top:15px;
+      left:15px;
+      right:15px;
+      bottom:15px;
+      border:1px solid #5701e0;
+      padding:20px;
+      text-align:center;
+      box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+      
+    }
+    
+    .box span{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      box-sizing: border-box;
+      
+    }
+    
+    .box span:nth-child(1)
+    {
+      transform:rotate(0deg);
+    }
+    
+    .box span:nth-child(2)
+    {
+      transform:rotate(90deg);
+    }
+    
+    .box span:nth-child(3)
+    {
+      transform:rotate(180deg);
+    }
+    
+    .box span:nth-child(4)
+    {
+      transform:rotate(270deg);
+    }
+    
+    .box span:before
+    {
+      content: '';
+      position: absolute;
+      width:100%;
+      height: 2px;
+      background: #50dfdb;
+      animation: animate 4s linear infinite;
+    }
+    
+    @keyframes animate {
+      0% {
+      transform:scaleX(0);
+      transform-origin: left;
+      }
+      50%
+      {
+        transform:scaleX(1);
+      transform-origin: left;
+      }
+      50.1%
+      {
+        transform:scaleX(1);
+      transform-origin: right;
+        
+      }
+      
+      100%
+      {
+        transform:scaleX(0);
+      transform-origin: right;
+        
+      }
+      
+      
+    } 
+  
+    /* CONTACT FORM */
+    .contactForm{
+      padding: 0px;
+      width: 90%;
+      max-width: 400px;
+      max-height: 100px;
+      margin: 30px auto;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contactForm input, button, textarea{
+      height: 50px;
+      padding-left: 5px;
+      font-size: 15px;
+    }
+    .contactForm textarea{
+      height: 100px;
+    }
+    .MetamaskInstall{
+      font-size: 10px;
+      margin-left: auto;
+      margin-right: 0px;;
+    }
+      /* WHITELIST BUTTON */
+     /* submit buttton https://getcssscan.com/css-buttons-examples*/
+     /* CSS */
+     .button-64 {
+       align-items: center;
+       background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+       border: 0;
+       border-radius: 8px;
+       box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+       box-sizing: border-box;
+       color: #FFFFFF;
+       display: flex;
+       font-family: Phantomsans, sans-serif;
+       font-size: 20px;
+       justify-content: center;
+       line-height: 1em;
+       max-width: 100%;
+       min-width: 140px;
+       padding: 3px;
+       text-decoration: none;
+       user-select: none;
+       -webkit-user-select: none;
+       touch-action: manipulation;
+       white-space: nowrap;
+       cursor: pointer;
+     }
+     
+     .button-64:active,
+     .button-64:hover {
+       outline: 0;
+     }
+     
+     .button-64 span {
+       background-color: rgb(5, 6, 45);
+       padding: 16px 24px;
+       border-radius: 6px;
+       width: 100%;
+       height: 100%;
+       transition: 300ms;
+     }
+     
+     .button-64:hover span {
+       background: none;
+     }
+     
+     @media (min-width: 768px) {
+       .button-64 {
+         font-size: 24px;
+         min-width: 196px;
+       }
+     } 
+  }
+
+
+   /* Mobile size */
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .container{  
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    body{
+      background-color: #111845;
+    }
+  
+  .header{
+      width: 90%;
+      color: #fff;
+      position:absolute;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .header h1{
+      font-size: 50px;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      
+  }  
+    .container p{ 
+      display: inline-block;
+      font-size:9px;
+      text-align: center;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+    } 
+  
+    .content h2{ font-size:19px;}
+  
+    .box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      background: #111845a6;
+      box-sizing: border-box;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgb(23, 32, 90);
+      border: 2px solid #2a3cad;
+      color: white;
+      padding: 20px;
+    }
+    
+    .box:before{
+      content: '';
+      position:absolute;
+      top:0;
+      left:-100%;
+      width:100%;
+      height:100%;
+      background: rgba(255,255,255,0.1);
+      transition:0.5s;
+      pointer-events: none;
+    }
+    
+    .box:hover:before{
+      left:-50%;
+      transform: skewX(-5deg);
+    }
+    
+    
+    .box .content{
+      position:absolute;
+      top:15px;
+      left:15px;
+      right:15px;
+      bottom:15px;
+      border:1px solid #5701e0;
+      padding:20px;
+      text-align:center;
+      box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+      
+    }
+    
+    .box span{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      box-sizing: border-box;
+      
+    }
+    
+    .box span:nth-child(1)
+    {
+      transform:rotate(0deg);
+    }
+    
+    .box span:nth-child(2)
+    {
+      transform:rotate(90deg);
+    }
+    
+    .box span:nth-child(3)
+    {
+      transform:rotate(180deg);
+    }
+    
+    .box span:nth-child(4)
+    {
+      transform:rotate(270deg);
+    }
+    
+    .box span:before
+    {
+      content: '';
+      position: absolute;
+      width:100%;
+      height: 2px;
+      background: #50dfdb;
+      animation: animate 4s linear infinite;
+    }
+    
+    @keyframes animate {
+      0% {
+      transform:scaleX(0);
+      transform-origin: left;
+      }
+      50%
+      {
+        transform:scaleX(1);
+      transform-origin: left;
+      }
+      50.1%
+      {
+        transform:scaleX(1);
+      transform-origin: right;
+        
+      }
+      
+      100%
+      {
+        transform:scaleX(0);
+      transform-origin: right;
+        
+      }
+      
+      
+    } 
+  
+    /* CONTACT FORM */
+    .contactForm{
+      padding: 0px;
+      width: 90%;
+      max-width: 400px;
+      max-height: 100px;
+      margin: 30px auto;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contactForm input, button, textarea{
+      height: 50px;
+      padding-left: 5px;
+      font-size: 15px;
+    }
+    .contactForm textarea{
+      height: 100px;
+    }
+    .MetamaskInstall{
+      font-size: 10px;
+      margin-left: auto;
+      margin-right: 0px;;
+    }
+      /* WHITELIST BUTTON */
+     /* submit buttton https://getcssscan.com/css-buttons-examples*/
+     /* CSS */
+     .button-64 {
+       align-items: center;
+       background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+       border: 0;
+       border-radius: 8px;
+       box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+       box-sizing: border-box;
+       color: #FFFFFF;
+       display: flex;
+       font-family: Phantomsans, sans-serif;
+       font-size: 20px;
+       justify-content: center;
+       line-height: 1em;
+       max-width: 100%;
+       min-width: 140px;
+       padding: 3px;
+       text-decoration: none;
+       user-select: none;
+       -webkit-user-select: none;
+       touch-action: manipulation;
+       white-space: nowrap;
+       cursor: pointer;
+     }
+     
+     .button-64:active,
+     .button-64:hover {
+       outline: 0;
+     }
+     
+     .button-64 span {
+       background-color: rgb(5, 6, 45);
+       padding: 16px 24px;
+       border-radius: 6px;
+       width: 100%;
+       height: 100%;
+       transition: 300ms;
+     }
+     
+     .button-64:hover span {
+       background: none;
+     }
+     
+     @media (min-width: 768px) {
+       .button-64 {
+         font-size: 24px;
+         min-width: 196px;
+       }
+     }
+   
+  }

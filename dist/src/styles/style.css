@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/* https://www.w3schools.com/css/css3_mediaqueries_ex.asp */
+/* Set the background color of body to tan */
+body {
+    /* background-color: tan;
+    text-align: center; */
+
+    min-height: 100%;
+    background-image: url("images/Damonfacebookcover.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+
+  }
+.header{
+    width: 100%;
+    color: #fff;
+    position:absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header h1{
+    font-size: 100px;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+  /* On screens that are 992px or above, set the background color to laptop or desktop */
+  @media screen and (min-width: 992px) {
+    /* font-size: 50px; */
+  }
+  
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    body {
+      /* background-color: blue; */
+      min-height: 100%;
+      background-image: url("images/Damonfacebookcover.png"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;    
+    }
+    .header{
+        width: 90%;
+        color: #fff;
+        position:absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header h1{
+        font-size: 50px;
+        color: #fff;
+        font-family: 'Orbitron', sans-serif;
+        
+    }  
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      /* background-color: olive; */
+      min-height: 100%;
+      background-image: url("images/Damonfacebookcover.png"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;    
+    }
+    .header{
+        width: 90%;
+        color: #fff;
+        position:absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header h1{
+        font-size: 35px;
+        color: #fff;
+        font-family: 'Orbitron', sans-serif;
+        
+    }  
+  }
+
+
+  /* WHITELIST BUTTON */
+  .whitelist{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: #050801; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;   
+  }
+  .whitelist a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+.whitelist a:hover{
+    background: #f40303ad;
+    color: #050801;
+    box-shadow: 0 0 5px #f40303ad,
+                0 0 25px #f40303ad,
+                0 0 50px #f40303ad,
+                0 0 200px #f40303ad;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.whitelist a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+
+.whitelist a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+
+.whitelist a span{
+    position: absolute;
+    display: block;
+}
+
+.whitelist a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#f40303ad);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+.whitelist a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#f40303ad);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+.whitelist a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#f40303ad);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+.whitelist a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#f40303ad);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+/* whitelist button ended */
+
+
+
+
+
+
+
+
+/* html, body{
+    min-height: 100%;
+    background-image: url("images/DamonBackgroundimage.svg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #000000;
+};
+
+
+.header{
+    width: 90%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header h1{
+    font-size:100px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 25px;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+
+
+
+.content{
+    padding: 25px;
+    color:#000000;
+    font-family: 'Electrolize', sans-serif;
+}
+.content p{
+    font-size:25px;
+    color: #fff;
+    text-align: left;
+    padding: 10px 25px;
+    
+    
+}
+
+.dropContainer{
+    display: flex; 
+    width: "100%";
+    background-color: #3d3d3d;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 50px; 
+
+}
+
+.dropText{
+    margin: bottom 5px;
+    font-size:15px;
+}
+
+.dropImage{
+    width: 200px; 
+    border-radius: 20px;
+} */

@@ -1,296 +1,902 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: 'Spectral', serif;
+    background-color: black;
 }
-/* https://www.w3schools.com/css/css3_mediaqueries_ex.asp */
 /* Set the background color of body to tan */
-body {
-    /* background-color: tan;
-    text-align: center; */
-
-    min-height: 100%;
-    background-image: url("images/Damonfacebookcover.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    text-align: center;
-
-  }
-.header{
-    width: 100%;
-    color: #fff;
-    position:absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+body,html {
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
 }
-.header h1{
-    font-size: 100px;
-    color: #fff;
-    font-family: 'Orbitron', sans-serif;
-    
+.header {
+  position: relative;
+  padding-top: 10px;
 }
 
-  /* On screens that are 992px or above, set the background color to laptop or desktop */
-  @media screen and (min-width: 992px) {
-    /* font-size: 50px; */
-  }
+.element1{
+  display:inline-block;
+  background-color: black;
+  padding-bottom: 0px;
+}
+.element1 a{
+  display:inline-block;
+  background-color: black;
+  padding: -10px;
+}
+.dlogo {
+  height: 40px;
+  width: 200px;
+  float:left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display:inline-block;
+  justify-content: space-between;
+}
+.rlogo {
+  height:45px;
+  width: 100px;
+  float:right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display:inline-block;
+  justify-content: space-between;
+  text-align: left;
+} 
+
+.topsectionimage{
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  height: 100%;
+  width:100%;
+} 
+.topsectionimage1{
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  height:80%;
+  width:80%;
+} 
+.topsectionimageabout{
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  height: 100%;
+  width:100%;
+} 
+.topsectionimageabout{
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  height:100%;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.white-square-container {
+  text-align: justify   ;
+}
+.white-square {
+  background-color: #000;
+  width: 90%;
+  height: 90%;
+  display: inline-block;
+  border-bottom: 1px solid white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+.white-square1 {
+  background-color: #000;
+  width: 90%;
+  height: 90%;
+  display: inline-block;
+  border-bottom: 1px solid white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+.white-square-container square {
+  position: relative;
+  width: 50%;
+}
+
+.white-square-container square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.blue-square {
+  background-color: #000;
+  width: 45%;
+  height: 45%;
+  display: inline-block;
+  /* border: 1px solid white; */
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+.blue-square-container square {
+  position: relative;
+  width: 60%;
+}
+
+.blue-square-container square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.centerText {
+  text-align: center; /* This puts the text into the center of the 
+  screen. */
+}
+.blue1-square {
+  /* background-color: #1d0c39; */
+  width: 45%;
+  height: 45%;
+  display: inline-block;
+  /* border: 1px solid white; */
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-position: center center;
+}
+.blue1-square p {
+  background-color: #1d0c39;
+  width: 100%;
+  height: 100%;
+}
+.blue1-square-container square {
+  position: relative;
+  width: 60%;
+}
+
+.blue1-square-container square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.participatecontainer-square {
+  background-color: #000;
+  width: 45%;
+  height: 45%;
+  display: inline-block;
+  border: 1px solid white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  background-position: center
+}
+.participatecontainer-square img{
+  max-width: 80%;
+  max-height: 80%;
+  display: block; /* remove extra space below image */
+}
+.participatecontainer-square-container square {
+  position: relative;
+  width: 60%;
+  background-position: center
+}
+
+.participatecontainere-square-container square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  background-position: center;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255); 
+  /* background-color: transparent;  */
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
   
-  /* On screens that are 992px or less, set the background color to blue */
-  @media screen and (max-width: 992px) {
-    body {
-      /* background-color: blue; */
-      min-height: 100%;
-      background-image: url("images/Damonfacebookcover.png"); 
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-attachment: fixed;    
-    }
-    .header{
-        width: 90%;
-        color: #fff;
-        position:absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .header h1{
-        font-size: 50px;
-        color: #fff;
-        font-family: 'Orbitron', sans-serif;
-        
-    }  
-  }
-  
-  /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 600px) {
-    body {
-      /* background-color: olive; */
-      min-height: 100%;
-      background-image: url("images/Damonfacebookcover.png"); 
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-attachment: fixed;    
-    }
-    .header{
-        width: 90%;
-        color: #fff;
-        position:absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .header h1{
-        font-size: 35px;
-        color: #fff;
-        font-family: 'Orbitron', sans-serif;
-        
-    }  
-  }
+}
+.top-center {
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  left: 0%;
+  text-align: right;
+  background-color: transparent;
+  width:100%;
+  height: 100%;
+  font-weight: bold;  
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  font-weight: bold;
+  text-align: right;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+/* Top left text */
+.top-leftside {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-weight: bold;
+  text-align: justify;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+.top-leftside a{
+  background-color: transparent;
+  color: #1581b7;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 15%;
+  right: 25%;
+  font-weight: bold;
+  text-align: right;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
 
 
-  /* WHITELIST BUTTON */
-  .whitelist{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* body */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /* background: #050801; */
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Orbitron', sans-serif;
-    font-weight: bold;   
-  }
-  .whitelist a{
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  font-weight: bold;
+  text-align: right;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+/* Top left text */
+.top-leftsidebottom {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  font-weight: bold;
+  text-align: justify;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+.top-leftsidebottom a{
+  background-color: transparent;
+  color: #1581b7;
+}
+/* Top right text */
+/* Top right text */
+.top-bottom {
+  position: center;
+  text-align: center;
+  background-color: transparent;
+}
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  background-color: transparent;
+}
+
+/* Centered text */
+.centered {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  background-color: transparent;
+}
+
+.pink-square-collab-container {
+  text-align: justify   ;
+}
+.pink-square-collab {
+  background-color: #000;
+  width: 90%;
+  height: 90%;
+  display: inline-block;
+  border-bottom: 1px solid #ed0a72;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+.pink-square-collab-container square {
+  position: relative;
+  width: 50%;
+}
+
+.pink-square-collab-container square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.Paternship{
+  background-color: black;
+  color:  #ed0a72;
+}
+/* style = {{display: 'inline-block',width: "500px", height: "100px", border: "1px solid #fff", textAlign: "center", backgroundPosition: "center", backgroundSize:"contain",backgroundColor:'#000' }} */
+
+
+.middlesectiomn{
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  height:100%;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+}  
+.middlesectiomn h1{
+  background-color: black;
+  color:  #ed0a72;
+  font-size: 50px;
+ text-align: center;
+ font-family: 'Montserrat', sans-serif;
+}
+.middlesectiomn p{
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center;
+  text-justify: center;
+  font-family: 'Montserrat', sans-serif;
+
+} 
+.whitelistbutton {
+  text-align: center; 
+} 
+.whitelistbutton input {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px; 
+}  
+.middlesectiomn{
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  height:100%;
+  width:100%;
+}  
+.middlebottomsectiomn h1{
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+ text-align: center;
+}
+.middlebottomsectiomn p{
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center;
+  text-justify: auto;
+
+} 
+.middlebottomsectiomn h2{
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+ text-align: center;
+}
+.metamaskimage1 img {
+  height: 250;
+  weight: 300;
+
+}
+.blue-square1 {
+  background-color: #000;
+  width: 45%;
+  height: 45%;
+  display: inline-block;
+  /* border: 1px solid white; */
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+.blue-square1-container square {
+  position: relative;
+  width: 60%;
+}
+
+.blue-square1-container square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.social-container {
+  background: #eee;
+  padding: 25px 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+.social-container-top {
+  background: #eee;
+  padding: 25px 50px;
+}
+.social-containe h1{
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover {
+  transform: translateY(-2px);
+}
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: rgb(255, 255, 255);
+}
+a.h3 {
+  color: rgb(255, 255, 255);
+}
+.damonbrand{
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;      
+} 
+.damonbrand img{
+  width : 70%;
+  height : 70%;
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .header {
     position: relative;
-    display: inline-block;
-    padding: 25px 30px;
-    margin: 40px 0;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    overflow: hidden;
-    margin-right: 50px;
-   
-}
-.whitelist a:hover{
-    background: #f40303ad;
-    color: #050801;
-    box-shadow: 0 0 5px #f40303ad,
-                0 0 25px #f40303ad,
-                0 0 50px #f40303ad,
-                0 0 200px #f40303ad;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-}
-.whitelist a:nth-child(1){
-    filter: hue-rotate(270deg);
-}
+    padding-top: 10px;
+  }
 
-.whitelist a:nth-child(2){
-    filter: hue-rotate(110deg);
-}
-
-.whitelist a span{
+  .element1{
+    display:inline-block;
+    /* background-color: black; */
+    padding-bottom: 0px;
+  }
+  .element1 a{
+    display:inline-block;
+    /* background-color: black; */
+    padding: -10px;
+  }
+  .dlogo {
+    height: 25px;
+    width: 100px;
+    float:left;
     position: absolute;
-    display: block;
-}
-
-.whitelist a span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#f40303ad);
-    animation: animate1 1s linear infinite;
-}
-@keyframes animate1{
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
-}
-
-.whitelist a span:nth-child(2){
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#f40303ad);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
-}
-@keyframes animate2{
-    0%{
-        top: -100%;
-    }
-    50%,100%{
-        top: 100%;
-    }
-}
-
-.whitelist a span:nth-child(3){
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#f40303ad);
-    animation: animate3 1s linear infinite;
-    animation-delay: 0.50s;
-}
-@keyframes animate3{
-    0%{
-        right: -100%;
-    }
-    50%,100%{
-        right: 100%;
-    }
-}
-
-.whitelist a span:nth-child(4){
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#f40303ad);
-    animation: animate4 1s linear infinite;
-    animation-delay: 0.75s;
-}
-@keyframes animate4{
-    0%{
-        bottom: -100%;
-    }
-    50%,100%{
-        bottom: 100%;
-    }
-}
-
-/* whitelist button ended */
-
-
-
-
-
-
-
-
-/* html, body{
-    min-height: 100%;
-    background-image: url("images/DamonBackgroundimage.svg"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-color: #000000;
-};
-
-
-.header{
-    width: 90%;
-    color: #fff;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.header h1{
-    font-size:100px;
-    color: #fff;
-    text-align: center;
-    padding: 10px 25px;
-    font-family: 'Orbitron', sans-serif;
-    
-}
-
-
-
-
-.content{
-    padding: 25px;
-    color:#000000;
-    font-family: 'Electrolize', sans-serif;
-}
-.content p{
-    font-size:25px;
-    color: #fff;
-    text-align: left;
-    padding: 10px 25px;
-    
-    
-}
-
-.dropContainer{
-    display: flex; 
-    width: "100%";
-    background-color: #3d3d3d;
-    padding: 25px;
+    top: 0px;
+    left: 0px;
+    display:inline-block;
     justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
-    margin-bottom: 50px; 
+  }
+  .rlogo {
+    height: 25px;
+    width: 75px;
+    float:right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display:inline-block;
+    justify-content: space-between;
+    text-align: left;
+  } 
+  
+  .topsectionimage{
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    height:180%;
+    width:100%;
+  } 
+  .topsectionimage1{
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    height:60%;
+    width:60%;
+  } 
 
+  .filler{
+    /* background-color: black; */
+    background-position: center;
+    background-size: contain;
+    height:100%;
+    width:100%;
+  }  
+  .filler h1{
+    /* background-color: black; */
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+   text-align: center;
+  }
+  .filler p{
+    /* background-color: black; */
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    text-justify: auto;
+
+  }
+
+  .middlesectiomn{
+    background-position: center;
+    background-size: contain;
+    height:100%;
+    width:100%;
+  }  
+  .middlesectiomn h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+   text-align: center;
+  }
+  .middlesectiomn p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    text-justify: auto;
+
+  } 
+  .whitelistbutton {
+    text-align: center; 
+  } 
+  .whitelistbutton input {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px; 
+  }  
+  .middlesectiomn{
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    height:100%;
+    width:100%;
+  }  
+  .middlebottomsectiomn h1{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+   text-align: center;
+  }
+  .middlebottomsectiomn p{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    text-justify: auto;
+
+  } 
+  .middlebottomsectiomn h2{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+   text-align: center;
+  }
+  .metamaskimage1 img {
+    height: 250;
+    weight: 300;
+
+  }
+  .social-container {
+    background: #eee;
+    padding: 25px 50px;
+  }
+  .social-container-top {
+    background: #eee;
+    padding: 25px 50px;
+  }
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  a.youtube {
+    color: #eb3223;
+  }
+  
+  a.facebook {
+    color: #4968ad;
+  }
+  
+  a.twitter {
+    color: #49a1eb;
+  }
+  
+  a.instagram {
+    color: rgb(255, 255, 255);
+  }
+  a.h3 {
+    color: rgb(255, 255, 255);
+  }
+  .damonbrand{
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;      
+  } 
+  .damonbrand img{
+    width : 70%;
+    height : 70%;
+  }
 }
 
-.dropText{
-    margin: bottom 5px;
-    font-size:15px;
-}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body,html {
+    background-color: black;
+  }
+  .header {
+    position: relative;
+    padding-top: 10px;
+  }
 
-.dropImage{
-    width: 200px; 
-    border-radius: 20px;
-} */
+  .element1{
+    display:inline-block;
+    background-color: black;
+    padding-bottom: 0px;
+  }
+  .element1 a{
+    display:inline-block;
+    background-color: black;
+    padding: -10px;
+  }
+  .dlogo {
+    height: 20px;
+    width: 100px;
+    float:left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display:inline-block;
+    justify-content: space-between;
+  }
+  .rlogo {
+    height: 30px;
+    width: 50px;
+    float:right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display:inline-block;
+    justify-content: space-between;
+    text-align: left;
+  } 
+  
+  .topsectionimage1{
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    height:80%;
+    width:80%;
+    text-align: center;
+  } 
+
+  .white-square-container {
+    text-align: justify   ;
+  }
+  .white-square {
+    background-color: #000;
+    width: 90%;
+    height: 90%;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .white-square1 {
+    background-color: #000;
+    width: 90%;
+    height: 90%;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .white-square-container square {
+    position: relative;
+    width: 50%;
+  }
+  
+  .white-square-container square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .blue-square {
+    background-color: #000;
+    width: 45%;
+    height: 45%;
+    display: inline-block;
+    /* border: 1px solid white; */
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 10px;
+  }
+  .blue-square-container square {
+    position: relative;
+    width: 60%;
+  }
+  
+  .blue-square-container square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  .centerText {
+    text-align: center; /* This puts the text into the center of the 
+    screen. */
+  }
+  .blue1-square {
+    /* background-color: #1d0c39; */
+    width: 45%;
+    height: 45%;
+    display: inline-block;
+    /* border: 1px solid white; */
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-position: center center;
+  }
+  .blue1-square p {
+    background-color: #1d0c39;
+    width: 100%;
+    height: 100%;
+  }
+  .blue1-square-container square {
+    position: relative;
+    width: 60%;
+  }
+  
+  .blue1-square-container square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .middlesectiomn{
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    height:100%;
+    width:100%;
+  }  
+  .middlesectiomn h1{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+   text-align: center;
+  }
+  .middlesectiomn p{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    text-justify: auto;
+
+  } 
+  .whitelistbutton {
+    text-align: center; 
+  } 
+  .whitelistbutton input {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px; 
+  }  
+  .middlesectiomn{
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    height:100%;
+    width:100%;
+  }  
+  .middlebottomsectiomn h1{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+   text-align: center;
+  }
+  .middlebottomsectiomn p{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    text-justify: auto;
+
+  } 
+  .middlebottomsectiomn h2{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+   text-align: center;
+  }
+  .metamaskimage1 img {
+    height: 250;
+    weight: 300;
+
+  }
+  .social-container {
+    background: #eee;
+    padding: 25px 50px;
+  }
+  .social-container-top {
+    background: #eee;
+    padding: 25px 50px;
+  }
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  a.youtube {
+    color: #eb3223;
+  }
+  
+  a.facebook {
+    color: #4968ad;
+  }
+  
+  a.twitter {
+    color: #49a1eb;
+  }
+  
+  a.instagram {
+    color: rgb(255, 255, 255);
+  }
+  a.h3 {
+    color: rgb(255, 255, 255);
+  }
+  .damonbrand{
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;      
+  }  
+  .damonbrand img{
+    width : 50%;
+    height : 50%;
+  }
+} 
